@@ -25,10 +25,11 @@ This skill runs on the Gemini AI Command Line tool. You need to install it first
    ```bash
    npm install -g @google/gemini-cli
    ```
-2. **Note:** If you get an error saying 'npm not found', your computer needs a tool called Node.js. Just paste this code, hit Enter, and try the `npm` command again:
-   ```bash
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && source ~/.bashrc && nvm install 20
-   ```
+2. **Note:** If you get an error saying 'npm not found' or 'zsh: command not found: npm', your computer needs a tool called Node.js. 
+   * Go to **[nodejs.org](https://nodejs.org)** in your web browser.
+   * Click the button to download the **"LTS" (Long Term Support)** version.
+   * Run the installer (just click "Next" through the default settings).
+   * Once finished, **close your Terminal window and open a new one**. Then try the `npm install` command from Step 2 again!
 3. **Note:** If you get a "permission denied" error, try adding `sudo` to the beginning: `sudo npm install -g @google/gemini-cli`.
 4. **🔐 Password Warning:** When typing `sudo` commands, your Terminal will ask for your computer password. **You will not see any characters or stars as you type.** This is a security feature—just type it blindly and hit `Enter`!
 
@@ -36,7 +37,7 @@ This skill runs on the Gemini AI Command Line tool. You need to install it first
 
 ## 🛠 Troubleshooting (Common Fixes)
 
-*   **"npm: command not found":** Run the `curl` command listed in Step 2 to install Node.js automatically.
+*   **"npm: command not found":** Download and install Node.js from **[nodejs.org](https://nodejs.org)**. If asked, choose **ARM64** for newer Macs (M1/M2/M3 chips) or **x64** for older Intel Macs and Windows PCs.
 *   **"gemini: command not found":** Close your Terminal and open it again to refresh it.
 *   **"Missing API Key":** Follow the steps in Phase 2 below exactly.
 *   **"Playwright error":** Make sure you ran the code in Step 3 to install the browser tools!
@@ -104,3 +105,4 @@ Don't like the colors? Want the AI to write in a different tone? You don't need 
     gemini skills package ./
     ```
     This creates a new `.skill` file that you can send to your friends or team so they can use your exact version!
+
