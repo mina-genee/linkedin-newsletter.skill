@@ -76,7 +76,7 @@ You are fully set up! Whenever you want your newsletter, here is what you do:
 ## 🧑‍💻 For Developers (How to modify this skill)
 If you know how to code and want to change the colors, design, or logic:
 
-1.  **Edit the files:** Open the `linkedin-newsletter/` folder on your computer. You can change the design in `assets/email_template.html` or the logic in `scripts/fetch_and_extract_posts.py`.
+1.  **Edit the files:** Open the `linkedin-newsletter/` folder on your computer. You can change the design in `email_template.html` or the logic in `fetch_and_extract_posts.py`.
 2.  **Repackage the skill:** Once you've made your changes, go to your Terminal and run:
     ```bash
     gemini skills package linkedin-newsletter
