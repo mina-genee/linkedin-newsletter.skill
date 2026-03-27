@@ -25,7 +25,18 @@ This skill runs on the Gemini AI Command Line tool. You need to install it first
    ```bash
    npm install -g @google/gemini-cli
    ```
-2. *Note: If you get a "permission denied" error, you may need to add `sudo` to the beginning: `sudo npm install -g @google/gemini-cli`*
+2. **Note:** If you get an error saying 'npm not found', you need to install **Node.js** first from [nodejs.org](https://nodejs.org).
+3. **Note:** If you get a "permission denied" error, try adding `sudo` to the beginning: `sudo npm install -g @google/gemini-cli`.
+4. **🔐 Password Warning:** When typing `sudo` commands, your Terminal will ask for your computer password. **You will not see any characters or stars as you type.** This is a security feature—just type it blindly and hit `Enter`!
+
+---
+
+## 🛠 Troubleshooting (Common Fixes)
+
+*   **"npm: command not found":** Go to [nodejs.org](https://nodejs.org) and install the "LTS" version.
+*   **"gemini: command not found":** Close your Terminal and open it again to refresh it.
+*   **"Missing API Key":** Follow the steps in Phase 2 below exactly.
+*   **"Playwright error":** Make sure you ran the code in Step 3 to install the browser tools!
 
 ### Step 3: Install the Helper Tools
 The AI needs a couple of small tools to be able to open a web browser and read your posts.
@@ -86,6 +97,10 @@ Don't like the colors? Want the AI to write in a different tone? You don't need 
 *   **Change the Design:** Open the `email_template.html` file in any basic text editor (like Notepad or TextEdit). You can change the hex color codes (like `#FFFFFF` for white) or swap out the fonts without breaking the AI's logic.
 *   **Change the AI's Instructions:** If you want the AI to summarize differently (e.g., "focus more on AI news," or "write it in a funny tone"), just open the `SKILL.md` file and type your new instructions in plain English.
 *   **Share your changes:** If you create a great new color scheme or rule set, go to your Terminal and run:
+    ```bash
+    gemini skills package ./
+    ```
+    This creates a new `.skill` file that you can send to your friends or team so they can use your exact version!
     ```bash
     gemini skills package ./
     ```
