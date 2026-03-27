@@ -42,7 +42,13 @@ This skill runs on the Gemini AI Command Line tool. You need to install it first
 *   **"Missing API Key":** Follow the steps in Phase 2 below exactly.
 *   **"Playwright error":** Make sure you ran the code in Step 3 to install the browser tools!
 
-### Step 3: Install the Helper Tools
+### Step 3: Download the Code
+You don't need any special developer tools to get the code. Just paste this line into your Terminal and hit Enter. It will download and unzip everything for you:
+```bash
+curl -L https://github.com/mina-genee/linkedin-newsletter.skill/archive/refs/heads/main.zip -o linkedin-newsletter.zip && unzip linkedin-newsletter.zip && cd linkedin-newsletter.skill-main
+```
+
+### Step 4: Install the Helper Tools
 The AI needs a couple of small tools to be able to open a web browser and read your posts.
 1. Copy this exact line of code:
    ```bash
@@ -50,13 +56,11 @@ The AI needs a couple of small tools to be able to open a web browser and read y
    ```
 2. **Go back to your Terminal**, paste that code in, and press `Enter`. 
 
-### Step 4: Install the Skill
-Now, let's teach the AI how to do this specific job.
-1. Make sure the `linkedin-newsletter.skill` file is downloaded to your computer.
-2. In your Terminal, paste this code and press `Enter`:
-   ```bash
-   gemini skills install linkedin-newsletter.skill
-   ```
+### Step 5: Install the Skill
+Now, let's teach the AI how to do this specific job. In your Terminal, paste this code and press `Enter`:
+```bash
+gemini skills install ./ --scope user
+```
 
 ---
 
