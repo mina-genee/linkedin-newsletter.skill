@@ -19,16 +19,23 @@ The Terminal is just a text-based way to talk to your computer.
 *   **🍎 If you are on a Mac:** Press `Command + Space` on your keyboard, type the word **Terminal**, and press `Enter`. A black or white box will pop up.
 *   **🪟 If you are on Windows:** Open your Start menu, type the word **PowerShell**, and press `Enter`.
 
-### Step 2: Install the Helper Tools
+### Step 2: Install the Gemini CLI
+This skill runs on the Gemini AI Command Line tool. You need to install it first:
+1. Copy this code, paste it into your Terminal, and press `Enter`:
+   ```bash
+   npm install -g @google/gemini-cli
+   ```
+2. *Note: If you get a "permission denied" error, you may need to add `sudo` to the beginning: `sudo npm install -g @google/gemini-cli`*
+
+### Step 3: Install the Helper Tools
 The AI needs a couple of small tools to be able to open a web browser and read your posts.
 1. Copy this exact line of code:
    ```bash
    pip install playwright beautifulsoup4 && playwright install chromium
    ```
 2. **Go back to your Terminal**, paste that code in, and press `Enter`. 
-3. *Note: You might see a bunch of text scrolling by. That's normal! Just wait until it stops.*
 
-### Step 3: Install the Skill
+### Step 4: Install the Skill
 Now, let's teach the AI how to do this specific job.
 1. Make sure the `linkedin-newsletter.skill` file is downloaded to your computer.
 2. In your Terminal, paste this code and press `Enter`:
@@ -61,8 +68,8 @@ Don't panic! This just means your AI needs its key. Here is exactly how to fix i
 You are fully set up! Whenever you want your newsletter, here is what you do:
 
 1. Open your Terminal.
-2. Type `gemini` and press `Enter` to wake up the AI chat.
-3. Simply ask the AI:
+2. Type `gemini` and press `Enter`. You will see a greeting welcoming you to the Gemini CLI.
+3. Now that you are inside the AI chat, simply ask it:
    > *"Extract my saved LinkedIn posts and send me a newsletter recap."*
 
 ### What to expect when you run this:
