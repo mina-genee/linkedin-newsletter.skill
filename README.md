@@ -73,17 +73,13 @@ You are fully set up! Whenever you want your newsletter, here is what you do:
 
 ---
 
-## How to modify this skill
-If you know how to code and want to change the colors, design, or logic:
+## 🎨 Make it Yours (No coding required)
+Don't like the colors? Want the AI to write in a different tone? You don't need to be a developer to customize this!
 
-1.  **Edit the files:** Open the `linkedin-newsletter/` folder on your computer. You can change the design in `email_template.html` or the logic in `fetch_and_extract_posts.py`.
-2.  **Repackage the skill:** Once you've made your changes, go to your Terminal and run:
+*   **Change the Design:** Open the `email_template.html` file in any basic text editor (like Notepad or TextEdit). You can change the hex color codes (like `#FFFFFF` for white) or swap out the fonts without breaking the AI's logic.
+*   **Change the AI's Instructions:** If you want the AI to summarize differently (e.g., "focus more on AI news," or "write it in a funny tone"), just open the `SKILL.md` file and type your new instructions in plain English.
+*   **Share your changes:** If you create a great new color scheme or rule set, go to your Terminal and run:
     ```bash
-    gemini skills package linkedin-newsletter
+    gemini skills package ./
     ```
-3.  **Push to GitHub:** Share your updates with the world by running:
-    ```bash
-    git add .
-    git commit -m "Update design"
-    git push origin main
-    ```
+    This creates a new `.skill` file that you can send to your friends or team so they can use your exact version!
